@@ -91,4 +91,12 @@
        
     </main>
 </body>
-
+<script> 
+    
+    fetch('./data/producto.json')
+    .then(response => response.json())
+    .then (producto => {
+        console.log("-1->",producto)
+        console.log("-2->",producto.nombre, producto.precio)
+    })
+</script>
