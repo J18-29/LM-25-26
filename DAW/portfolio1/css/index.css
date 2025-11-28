@@ -46,7 +46,11 @@ header nav {
     text-align: center;
     padding: 10px;
     border: 1px solid red;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 header nav a {
     color: yellow;
