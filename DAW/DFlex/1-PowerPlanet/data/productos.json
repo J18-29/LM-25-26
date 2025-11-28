@@ -6,7 +6,11 @@
     "precioOriginal": 499.99,
     "descuento": 50,
     "imagen": "https://thumb.pccomponentes.com/w-530-530/articles/1086/10863849/1216-cubot-kingkong-star-2-5g-12-256gb-negro-libre.jpg",
+<<<<<<< HEAD
     "valoracion": 5.4,
+=======
+    "valoracion": 3,
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
     "opiniones": 0,
     "caracteristicas": {
       "cpu": "Chipset Realtek RTL8762C",
@@ -21,7 +25,11 @@
     "precioOriginal": 959.00,
     "descuento": 17,
     "imagen": "https://thumb.pccomponentes.com/w-530-530/articles/1085/10855024/117-apple-iphone-16-128gb-azul-ultramar-caracteristicas.jpg",
+<<<<<<< HEAD
     "valoracion": 5,
+=======
+    "valoracion": 2,
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
     "opiniones": 34,
     "caracteristicas": {
       "cpu": "Apple A18 Bionic",
@@ -149,4 +157,8 @@
       "disco": "No aplica"
     }
   }
+<<<<<<< HEAD
 ]
+=======
+]
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031

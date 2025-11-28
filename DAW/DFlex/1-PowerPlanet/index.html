@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -69,6 +70,75 @@
     <nav id="sociales">
       
       <a href="#">
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPlanet</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <figure>
+            <img src="img/logo.png" alt="Logo PowerPlanet">
+        </figure>
+        <form> <!-- Formulario web -->
+            <input type="search" placeholder="Buscar Articulo ...">
+        </form>
+        <nav>
+            <a href="#">Ofertas Limitadas</a>
+            <a href="#">Contactanos</a>
+            <a href="#">ES</a>
+        </nav>
+        <div id="carrito"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+    <main>
+        <section id="catalogo">
+            <article>
+                <p class="envio">Envio Gratis</p>
+                <figure>
+                    <img width= "100px" src="img/productos/ipad.jpg" />
+                </figure>
+                <p class="nombre">Apple Ipad Pro</p>
+                <p class="caracteristicas">
+
+                    128GB WiFi iPadOS 18 Plata</p>
+                <div class="valoraciones">
+                    <span class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="nvaloraciones">150</span>
+                    <span class="comentarios">(45 opiniones)</span>
+                </div>
+                <div precios>
+                    <span class="dto"> 15% </span>
+                    <span class="pvr"> 400€</span>
+                    <span class="pvp"> 369.90€</span>
+                </div>
+                <div class="recibe">
+                        recibelos
+                </div>
+            </article>
+            
+            
+        </section>
+    </main>
+    <footer>
+        <nav id="sociales">
+            <a href="#">
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
                 <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="#">
@@ -80,6 +150,7 @@
             <a href="#">
                 <i class="fa-brands fa-youtube"></i>
             </a>
+<<<<<<< HEAD
     </nav>
     
     <div id="SUSCRIBETE">
@@ -90,6 +161,17 @@
   <h3> Condiciones de compra</h3>
   <nav>
     <a href="#">
+=======
+        </nav>
+        <div id="subscribete">
+            <h2>¡SUSCRÍBETE A POWEROFERTAS!</h2>
+            <input type="email" placeholder="Introduce tu email">    
+        </div>
+        <article>
+            <h3>Condicones de Compra</h3>
+            <nav>
+                <a href="#">
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
                     <i class="fa-solid fa-car"></i>
                     <span>¿Qué envíos hay disponibles en Powerplanetonline?</span>
                 </a>
@@ -125,7 +207,12 @@
                     <i class="fa-solid fa-building-columns"></i>
                     <span>Centros educativos y administraciones públicas</span>
                 </a>    
+<<<<<<< HEAD
             </nav>    
+=======
+
+            </nav>
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
         </article>
         <article>
             <h3>Distribuidores</h3>
@@ -133,6 +220,7 @@
                 <a href="#">Distribución al por mayor</a>
             </nav>
         </article>
+<<<<<<< HEAD
 <article>
   <h3>Informacion General</h3>
   <nav>
@@ -142,6 +230,18 @@
 </footer>
 </body>
 </html>
+=======
+        <article>
+            <h3>Informacion General</h3>
+            <nav>
+                <a href="#">¿Dudas? contacta</a>
+            </nav>
+        </article>
+     </footer>
+</body>
+</html>
+
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
 <!-- Codigo Javascript para listar los productos -->
 <!-- Navegador web: Brave, Firefox, Chrome, Safaris: 
         codigo que ejecutan: (pagina web)
@@ -182,7 +282,11 @@
     contSeccion.appendChild(tarjeta3);
 */
 /* funcion para leer un archivo json o consultar una api */
+<<<<<<< HEAD
     fetch('sample.json')
+=======
+    fetch('./data/productos.json')
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
         .then(response => response.json())
         // productos -> todo el array de objetos
         .then ( productos => {
@@ -190,6 +294,23 @@
             productos.forEach( producto => {
                 // en producto tendre cada producto del array
                 const tarjeta = document.createElement('article');
+<<<<<<< HEAD
+=======
+                // Generar estrellas según la valoración (0–5)
+               
+                //codigo JS para generar dinamicax el numero de estrellas
+                //en funcion del campo valoracion del producto
+                const maxEstrellas = 5; //crear una constante (maxEstrellas no cambia)
+                let estrellasHTML = ''; //variable que contiene el codigo html de las estrellas
+
+                for (let i=1; i<=maxEstrellas; i++){
+                    if (i <= producto.valoracion){
+                        estrellasHTML = estrellasHTML + `<i class="fa-solid fa-star"></i>`;
+                    } else
+                        estrellasHTML = estrellasHTML + `<i class="fa-regular fa-star"></i>`;
+                }
+                
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
                 tarjeta.innerHTML=
                 `
                     <p class="envio">Envio Gratis</p>
@@ -197,6 +318,21 @@
                         <img width= "100px" src="${producto.imagen}" />
                     </figure>
                     <p class="nombre">${producto.nombre}</p>
+<<<<<<< HEAD
+=======
+                    <p class="caracteristicas">
+                        <span class="cpu">${producto.caracteristicas.cpu}</span>
+                        <span class="ram"> RAM: ${producto.caracteristicas.ram}</span>
+                        <span class="disco"> HDD: ${producto.caracteristicas.disco}</span
+                    </p>
+                     <div class="valoraciones">
+                        <span class="star">
+                            ${estrellasHTML}
+                        </span>
+                        <span class="nvaloraciones">${producto.valoracion}</span>
+                        <span class="comentarios">(${producto.opiniones} opiniones)</span>
+                    </div>
+>>>>>>> aee389193d5f58f0e4cca04f54e357e439e90031
                 `;
                 contSeccion.appendChild(tarjeta)
             })
