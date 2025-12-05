@@ -118,7 +118,7 @@
     //Manipular el HMTL(usuario) <--> DOM (navegador) 
     //fectch es un funcion JS para leer un archivo JSON o
     //hacer una peticion http a una API
-//    fetch('https://www.powerplanet.com/ordenadores') //idem peticion a la api (BD)
+//    fetch('https://www.powerplanet.com/moviles?samsung') //idem peticion a la api (BD)
     fetch('data/productos.json') //idem peticion a la api (BD)
         .then(response => response.json())
         .then(productos => {
@@ -150,7 +150,15 @@
                         <span>HDD: ${producto.caracteristicas.disco}</span> 
                     </p>
                 `;
-                contenedor.appendChild(tarjeta)
+
+               
+                contenedor.appendChild(tarjeta);
+                 //******* añadimos un enlace a cada producto a su detalle ********
+                tarjeta.addEventListener('click', () => {
+                    //creamos el parametros codigo = id del producto
+                    window.location.href = `detalle.html?codigo=${producto.id}`;
+                });
+
             })
         })
 </script>
